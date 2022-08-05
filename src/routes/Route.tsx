@@ -4,7 +4,6 @@ import React from "react";
 import routes from "@/routes";
 
 const Route = () => {
-  console.log("routes ==>", routes);
   return (
     <Routes>
       {routes.map((e: RouteMap) => {
