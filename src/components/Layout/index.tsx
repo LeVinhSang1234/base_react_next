@@ -47,7 +47,7 @@ class Layout extends Component<LayoutProps, LayoutState> {
   }
 }
 
-class FreezeChildren extends Component<{ children: ReactNode }> {
+export class FreezeChildren extends Component<{ children: ReactNode }> {
   shouldComponentUpdate() {
     return false;
   }

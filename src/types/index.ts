@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { NavigateFunction, Params, Location } from "react-router-dom";
 
 export declare type PayloadRedux = {
   [key: string]: any;
@@ -56,3 +57,11 @@ export declare type ModelsInterface = {
     [key: string]: FunctionReducer;
   };
 };
+
+export declare type RouterProps = {
+  navigate: NavigateFunction;
+  readonly params: Params<string>;
+  location: Location;
+};
+
+export type WithRouterProps<T> = T & RouterProps;
